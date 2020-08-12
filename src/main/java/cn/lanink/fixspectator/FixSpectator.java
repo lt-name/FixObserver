@@ -31,8 +31,7 @@ public class FixSpectator extends PluginBase implements Listener {
         if (event.getPacket() instanceof AdventureSettingsPacket) {
             AdventureSettingsPacket packet = (AdventureSettingsPacket) event.getPacket();
             Player player = event.getPlayer();
-            if (player.isSpectator() && (packet.playerPermission == Player.PERMISSION_MEMBER ||
-                    packet.playerPermission == Player.PERMISSION_OPERATOR)) {
+            if (player.isSpectator() && packet.playerPermission != Player.PERMISSION_VISITOR) {
                 event.setCancelled(true);
                 AdventureSettingsPacket pk = new AdventureSettingsPacket();
                 for (AdventureSettings.Type t : AdventureSettings.Type.values()) {
