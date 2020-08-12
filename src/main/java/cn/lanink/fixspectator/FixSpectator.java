@@ -41,7 +41,6 @@ public class FixSpectator extends PluginBase implements Listener {
                 pk.playerPermission = Player.PERMISSION_VISITOR;
                 pk.entityUniqueId = player.getId();
                 event.getPlayer().dataPacket(pk);
-                getLogger().info(pk.toString());
             }
         }
     }
