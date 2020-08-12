@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cn.lanink</groupId>
-    <artifactId>FixObserver</artifactId>
+    <artifactId>FixSpectator</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
     <properties>
@@ -71,7 +71,7 @@
                         </goals>
                         <configuration>
                             <includes>
-                                <include>${project.basedir}/src/main/java/cn/lanink/fixobserver/FixObserver.java</include>
+                                <include>${project.basedir}/src/main/java/cn/lanink/fixspectator/FixSpectator.java</include>
                                 <include>${project.basedir}/src/main/resources/plugin.yml</include>
                             </includes>
                             <replacements>

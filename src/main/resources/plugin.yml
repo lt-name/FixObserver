@@ -1,5 +1,5 @@
-name: FixObserver
-main: cn.lanink.fixobserver.FixObserver
+name: FixSpectator
+main: cn.lanink.fixspectator.FixSpectator
 version: "1.0.0-SNAPSHOT"
 api: ["1.0.0", "1.0.11"]
 load: POSTWORLD
